@@ -25,7 +25,7 @@
 }
 
 .container {
-  width: 1150px;
+  width: 1200px;
   margin: 0 auto;
 }
 
@@ -34,6 +34,7 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 1rem;
+  height: 75px;
   /* background-color: #4e45d5; */
   /* backdrop-filter: blur(10px); */
 }
@@ -49,7 +50,7 @@
 }
 
 .logo-text {
-  margin-left: -1.2rem;
+  /* margin-left: -1.2rem; */
   font-size: 28px;
 }
 
@@ -74,10 +75,29 @@ a {
 }
 
 .nav-items div:hover {
-  transition: 0.3s;
+  transition: 0.3s; */
   /* font-weight: 500; */
   letter-spacing: 0.5px;
 }
+
+/* .nav-item{
+  border-radius: 10px;
+  padding: 5px;
+  transition: 0.2s;
+  border-color: rgb(113, 6, 59); 
+  border-style: solid;
+  border-bottom: 2px;
+   
+}
+
+.nav-item:hover{
+  /* background-color: rgba(145, 0, 189, 0.238); 
+  border-color: rgb(113, 6, 59); */
+ /* border-style: solid;
+  border-bottom: 2px;
+   /* border-width: 3px; 
+  box-shadow: 0px 0px 90px rgb(194, 3, 194);
+}*/*/*/
 
 /* Header End */
 
@@ -98,10 +118,10 @@ a {
 .faded-text {
   user-select: none;
   font-size: 6em;
-  color: rgba(231, 231, 231, 0.263);
+  color: rgb(18, 18, 18);
 
-  bottom: -16%;
-  left: -5%;
+  bottom: -17%;
+  left: -7%;
   font-weight: bold;
 
   /* transition: all 3s; */
@@ -310,7 +330,9 @@ a {
 /* Projects Section  */
 .projectSection {
   margin-top: 4rem;
-  background-color: #000000;
+  /* background-color: #000000; */
+  background-color: rgb(18, 18, 18);
+
 }
 
 .projectTitle {
@@ -332,6 +354,8 @@ a {
   background-image: url(./Images/projects/Project1.png);
   right: 5%;
 }
+
+
 
 #project2 {
   background-image: url(./Images/projects/Project2.png);
@@ -355,8 +379,15 @@ a {
   background-repeat: no-repeat;
   position: relative;
   box-shadow: 0px 0px 40px #1f1f1f;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 25px;
   margin: 2rem auto;
   z-index: 2;
+  transition: 1s;
+}
+
+.projectCard:hover{
+  box-shadow: 0px 0px 1000px rgb(102, 5, 54);
 }
 
 .projectCard::before {
@@ -366,9 +397,12 @@ a {
   bottom: 0;
   right: 0;
   left: 0;
-  background: linear-gradient(45deg, #343d68, #343d68be, #343d687c);
+  /* background: linear-gradient(45deg, #343d68, #343d68be, #343d687c); */
+  background: linear-gradient(90deg, #000000b0, rgba(0, 0, 0, 0.266), #95969600);
   z-index: 1;
-  transition: 0.5s all;
+  transition: 0.5s;
+  border-radius: 25px;
+
   transform-origin: left;
   transform: scaleX(0);
 }
@@ -379,9 +413,9 @@ a {
 
 .projectNumber {
   position: absolute;
-  font-size: 200px;
+  font-size: 180px;
   font-weight: 600;
-  color: #fff;
+  color: rgba(251, 142, 196, 0.437);
   display: none;
   z-index: 10;
   transition: 0.8s;
@@ -399,6 +433,7 @@ a {
 
 .projectCard:hover .projectNumber {
   display: block;
+  
 }
 
 .projectCard::after {
@@ -422,8 +457,10 @@ a {
   bottom: 20%;
   position: absolute;
   z-index: 5;
-  transition: all 0.4s;
+  transition: 0.4s;
 }
+
+
 
 .leftProjectContent {
   left: 5%;
@@ -473,7 +510,7 @@ a {
   cursor: pointer;
   color: white;
   font-size: 35px;
-  transition: all 0.4s;
+  transition: 0.4s;
 }
 
 .icon:hover {
