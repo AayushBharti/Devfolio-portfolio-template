@@ -297,10 +297,9 @@ a {
  
 }
 
-.user-image:hover{
+/* .user-image:hover{
   transform: rotate3d(1, 0, 0, 75deg);
-
-}
+} */
 
 @keyframes scaleImage {
   0% {
