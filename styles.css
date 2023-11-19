@@ -57,12 +57,14 @@
   display: flex;
   width: 100%;
   justify-content: space-between;
+  
   align-items: center;
   /* padding-top: 1rem; */
   height: 50px;
   background-color: rgba(0, 0, 0, 0.246);
   backdrop-filter: blur(10px);
   z-index: 10;
+  
   position: fixed;
 }
 
@@ -160,16 +162,17 @@ a {
   /* gap: 5rem; */
   /* margin: 4rem auto; */
   /* padding: 0 1rem; */
-  padding-bottom: 5rem;
+  padding-bottom: 4rem;
 } 
 
 .faded-text {
   user-select: none;
   font-size: 6em;
-  color: rgb(18, 18, 18);
+  color: rgba(39, 39, 40, 0.448);
+  /* color: rgb(18, 18, 18); */
 
   bottom: -16%;
-  left: -8%;
+  left: -5%;
   font-weight: bold;
 
   /* transition: all 3s; */
@@ -279,26 +282,31 @@ a {
   
   /* padding: 1rem; */
   /* background-color: rgba(255, 0, 234, 0.178); */
-  background-color: rgb(1, 0, 1);
+  /* background-color: rgb(1, 0, 1); */
   transition: 1.5s;
   animation: scaleImage 5s linear infinite;
   /* box-shadow: 0px 0px 500px 10px rgb(221, 6, 110); */
   border-radius: 20px;
-
+  background-image: url("./Images/userAsset/aayushAi.jpeg");
   /* width: 345px; */
   /* height: 390px; */
-  width: 20rem;
+  height: 25rem;
+  width: 18rem;
+  background-position: center;
+  background-size: cover;
+ 
 }
 
 .user-image:hover{
-  transform:matrix3d(2)
+  transform: rotate3d(1, 0, 0, 75deg);
+
 }
 
 @keyframes scaleImage {
   0% {
     scale: 1;
     filter: grayscale(1);
-    /* box-shadow: 0px 0px 500px rgb(244, 7, 236); */
+    /* box-shadow: 0px 0px 2500px 10px rgba(210, 3, 193, 0.649); */
   }
 
   50% {
@@ -310,15 +318,15 @@ a {
   100% {
     scale: 1;
     filter: grayscale(1);
-    /* box-shadow: 0px 0px 500px rgb(244, 7, 236); */
+    /* box-shadow: 0px 0px 2500px 10px rgba(210, 3, 193, 0.649); */
   }
 }
 
-.user-image img {
+/* .user-image img {
   z-index: -9;
   width: 100%;
   border-radius: 20px;
-}
+} */
 
 .icons {
   z-index: 1;
