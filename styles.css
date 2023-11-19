@@ -277,8 +277,9 @@ a {
 
 .user-image {
   
-  padding: 2rem;
-  background-color: rgba(255, 0, 234, 0.178);
+  padding: 1rem;
+  /* background-color: rgba(255, 0, 234, 0.178); */
+  background-color: rgb(1, 0, 1);
   transition: 1.5s;
   animation: scaleImage 5s linear infinite;
   /* box-shadow: 0px 0px 500px rgb(221, 6, 110); */
