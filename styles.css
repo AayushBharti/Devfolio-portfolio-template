@@ -277,16 +277,21 @@ a {
 
 .user-image {
   
-  padding: 1rem;
+  /* padding: 1rem; */
   /* background-color: rgba(255, 0, 234, 0.178); */
   background-color: rgb(1, 0, 1);
   transition: 1.5s;
   animation: scaleImage 5s linear infinite;
-  /* box-shadow: 0px 0px 500px rgb(221, 6, 110); */
+  /* box-shadow: 0px 0px 500px 10px rgb(221, 6, 110); */
   border-radius: 20px;
 
-  width: 345px;
-  height: 390px;
+  /* width: 345px; */
+  /* height: 390px; */
+  width: 20rem;
+}
+
+.user-image:hover{
+  transform:matrix3d(2)
 }
 
 @keyframes scaleImage {
@@ -298,7 +303,7 @@ a {
 
   50% {
     filter: grayscale(0);
-    box-shadow: 0px 0px 2500px rgba(210, 3, 193, 0.649);
+    box-shadow: 0px 0px 2500px 10px rgba(210, 3, 193, 0.649);
     scale: 0.9;
   }
 
@@ -320,8 +325,8 @@ a {
 }
 
 .icon-dots {
-  bottom: -1rem;
-  right: 0;
+  bottom: -2rem;
+  right: -1.5rem;
   animation: dotsAnimation 5s linear infinite;
 }
 
@@ -334,8 +339,8 @@ a {
 .icon-zigZag {
   /* z-index: 10; */
   top: 1.5em;
-  left: -0.3em;
-  animation: zigzagAnimation 5s infinite;
+  left: -2em;
+  animation: zigzagAnimation 5s ease-in infinite;
 }
 
 @keyframes zigzagAnimation {
