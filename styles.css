@@ -8,6 +8,16 @@
   color: white;
   scroll-behavior: smooth;
   user-select: none;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;  
+
+    user-drag: none;
+    -webkit-user-drag: none;
 }
 
 :root {
@@ -54,7 +64,7 @@
   width: 100%;
   /* transform:rotate(180deg); */
   /* transform: scale(1.5); */
-  transform: translateY(-326px) rotate(180deg);
+  transform: translateY(-321px) rotate(180deg);
   
 }
 
@@ -69,8 +79,8 @@
   
   align-items: center;
   /* padding-top: 1rem; */
-  height: 50px;
-  background-color: rgba(0, 0, 0, 0.283);
+  height: 55px;
+  background-color: rgba(0, 0, 0, 0.134);
   backdrop-filter: blur(10px);
   z-index: 10;
   
@@ -102,6 +112,7 @@
   /* gap: 2rem; */
   /* position: relative; */
   background-color: rgba(0, 0, 0, 0.198);
+  border: 1px solid rgba(0, 0, 0, 0.165);
   backdrop-filter: blur(11px);
 
   height: 35px;
@@ -136,7 +147,7 @@ a {
 .nav-links{
   display: flex;
   justify-content: center;
-  margin-right: 1rem;
+  margin-right: 2rem;
   gap: 2rem;
   /* width: 300px; */
   /* position: relative; */
@@ -207,9 +218,10 @@ a {
 .role {
   /* color: #4e45d5; */
   /* background-image: linear-gradient();
-   */
+   */ 
+    /* background: -webkit-linear-gradient(#eee, #333); */
   background: linear-gradient(43deg, rgb(65, 88, 208) 0%, rgb(200, 80, 192) 46%, rgb(255, 204, 112) 100%);
-  /* background: -webkit-linear-gradient(#eee, #333); */
+
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 800;
@@ -433,10 +445,14 @@ a {
 
 .projectTitle {
   padding-top: 7rem;
-  color: rgb(149, 3, 216);
+  /* color: rgb(149, 3, 216); */
+  background:linear-gradient(112.5deg, rgb(95, 10, 135) 11.4%, rgb(164, 80, 139) 60.2%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 
-  font-size: 90px;
-  line-height: 75px;
+  font-weight: 700;
+  font-size: 70px;
+  /* line-height: 75px; */
   /* padding: 50px 0 30px; */
   text-align: center;
 }
