@@ -50,11 +50,11 @@
 .space video{
   position: absolute;
   /* z-index: -11; */
-  filter:opacity(80%);
-  width: 100vw;
+  filter:opacity(85%);
+  width: 100%;
   /* transform:rotate(180deg); */
   /* transform: scale(1.5); */
-  transform: translateY(-383px) rotate(180deg);
+  transform: translateY(-326px) rotate(180deg);
   
 }
 
@@ -101,8 +101,8 @@
   justify-content: space-between;
   /* gap: 2rem; */
   /* position: relative; */
-  background-color: rgba(0, 0, 0, 0.387);
-  backdrop-filter: blur(13px);
+  background-color: rgba(0, 0, 0, 0.301);
+  backdrop-filter: blur(11px);
 
   height: 35px;
   width: 550px;
@@ -354,7 +354,7 @@ a {
 .frontSide,
 .frontSide::before {
 
-  background-image: url("./Images/userAsset/aayushAi.jpeg");
+  background-image: url("./Images/userAsset/aayush.jpg");
   background-size: cover;
   /* background: linear-gradient(43deg, rgb(65, 88, 208) 0%, rgb(200, 80, 192) 46%, rgb(255, 204, 112) 100%); */
 }
