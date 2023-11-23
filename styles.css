@@ -354,7 +354,7 @@ a {
 .frontSide,
 .frontSide::before {
 
-  background-image: url("./Images/userAsset/aayush.jpg");
+  background-image: url("/userAsset/aayush.jpg");
   background-size: cover;
   /* background: linear-gradient(43deg, rgb(65, 88, 208) 0%, rgb(200, 80, 192) 46%, rgb(255, 204, 112) 100%); */
 }
@@ -426,7 +426,7 @@ a {
   /* margin-top: 5rem; */
   /* background-color: #000000; */
   /* background-color:  rgb(30, 30, 30); */
-  background: linear-gradient(rgb(30, 30, 30),black,black,black);
+  background: linear-gradient(rgb(30, 30, 30),rgb(8, 8, 8),black);
 
 
 }
@@ -449,23 +449,23 @@ a {
 }
 
 #project1 {
-  background-image: url(./Images/projects/Frame\ 1\ \(1\).png);
+  background-image: url(/projects/Frame\ 1\ \(1\).png);
   right: 5%;
   margin-top: 5rem;
 }
 
 #project2 {
-  background-image: url(./Images/projects/Project2.png);
+  background-image: url(/projects/Project2.png);
   left: 5%;
 }
 
 #project3 {
-  background-image: url(./Images/projects/Project3.png);
+  background-image: url(/projects/Project3.png);
   right: 5%;
 }
 
 #project4 {
-  background-image: url(./Images/projects/Project4.png);
+  background-image: url(/projects/Project4.png);
   left: 5%;
 }
 
