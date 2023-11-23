@@ -58,13 +58,22 @@
 }
 
 .space video{
-  position: absolute;
+  /* position: absolute; */
   /* z-index: -11; */
-  filter:opacity(85%);
-  width: 100%;
+  /* filter:opacity(85%); */
+  /* width: 100%; */
   /* transform:rotate(180deg); */
   /* transform: scale(1.5); */
-  transform: translateY(-321px) rotate(180deg);
+  /* transform: translateY(-321px) rotate(180deg); */
+
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  filter: opacity(90%);
+  transform: translate( -50%,-87%) rotate(180deg);
+  z-index: 0;
+
   
 }
 
@@ -626,19 +635,27 @@ a {
 /* Skill Section Start  */
 
 .space2 video{
-  position: absolute;
-  z-index: -11;
-  width: 1000px;
+  /* position: absolute; */
+  /* z-index: -11; */
+  /* width: 1000px; */
   /* transform:rotate(180deg); */
-  filter: opacity(80%);
+  /* filter: opacity(80%); */
   /* transform: scale(1.5); */
-  transform: translateX(350px) translateY(130px);
+  /* transform: translateX(350px) translateY(130px); */
+  
+  position: absolute;
+  width: 200%;
+  top: 50%;
+  left: 50%;
+  filter: opacity(85%);
+  transform: translate(-50%, -30%);
+  z-index: -1;
   
 }
 
 .skillContainer {
   position: relative;
-
+  /* width: 100%; */
   display: flex;
   padding: 10rem;
   /* margin: 10rem auto; */
@@ -684,6 +701,7 @@ a {
   justify-content: center;
 }
 
+
 /* .blobStyle {
   position: absolute;
   width: 280px;
@@ -702,12 +720,14 @@ a {
 } */
 
 .skillsLogo {
-  width: 80px;
+  width: 75px;
+  height: 75px;
   transition: all 0.5s;
+
 }
 
 .skillsLogo:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .skillFadedText {
