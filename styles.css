@@ -15,16 +15,13 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;  
-
-    user-drag: none;
+    /* user-drag: none; */
     -webkit-user-drag: none;
 }
 
 :root {
   --bgOrange: #e84949;
 }
-
-
 
 
 .wrapper {
@@ -65,16 +62,14 @@
   /* transform:rotate(180deg); */
   /* transform: scale(1.5); */
   /* transform: translateY(-321px) rotate(180deg); */
-
   position: absolute;
   width: 100%;
+  /* top: -22%; */
   top: 50%;
   left: 50%;
   filter: opacity(90%);
   transform: translate( -50%,-87%) rotate(180deg);
-  z-index: 0;
-
-  
+  z-index: 0;  
 }
 
 
@@ -100,7 +95,7 @@
 .logo {
   width: 28px;
   margin: 0 1rem;
-  border-radius: 30px;
+  border-radius: 300px;
 }
 
 .logo-container {
@@ -117,7 +112,7 @@
 
 .nav-icon {
   cursor: pointer;
-  color: rgb(190, 190, 190);
+  color: rgba(255, 255, 255, 0.765);
   font-size: 18px;
   transition: 0.3s;
 }
@@ -133,7 +128,7 @@
   /* gap: 2rem; */
   /* position: relative; */
   background-color: rgba(0, 0, 0, 0.198);
-  border: 1px solid rgba(0, 0, 0, 0.165);
+  border: 1px solid rgb(34, 1, 51);
   backdrop-filter: blur(11px);
   height: 35px;
   width: 550px;
@@ -280,7 +275,10 @@ a {
   border-color: rgb(238, 181, 245);
   border-width: 2px;
   border-style:solid;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
   color: #eacaf7d3;
   /* width: 180px; */
   /* margin-top: 1rem; */
@@ -297,37 +295,45 @@ a {
 }
 
 .btn:hover{
-  box-shadow: 0px 0px 75px 15px rgba(210, 17, 236, 0.507);
-  transition: 0.4s 0.5s;
-  scale:1.05;
-  letter-spacing: 3px;
+  /* box-shadow: 0px 0px 75px 15px rgba(210, 17, 236, 0.507); */
+  /* transition: 0.4s 0.5s; */
+  transition: 0.5s;
+  scale:1.0;
+  letter-spacing: 2px;
   background-color: rgba(0, 0, 0, 0.574);
   border-color: rgb(241, 193, 247);
   color: #ffffffef;
-
 }
 
 .btn::before{
   content: "";
   /* background-color: rgba(139, 1, 177, 0.522); */
   position: absolute;
-  top: 0;
+  /* top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: 0.4s ease;
-  border-radius: 8px;
+  bottom: 0;   OR*/
+  height: 100%;
+  width: 100%;
+  /* transform: scaleY(0.14); */
+  transform: translate(0%,82%);
+  transform-origin: bottom;
+  /* transition: 0.3s ease; */
+  transition: 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+  /* border-radius: 8px; */
   z-index: -1;
   
-  background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+  background-image: linear-gradient(135deg,#7b4397,#dc2430 );
 }
-
 .btn:hover::before{
-  transform: scaleX(1);
+  /* transform: scaleY(1); */
+  transform: translate(0%,0%);
 }
-
+.btn:active {
+  transform: scale(0.9) rotate(3deg);
+  /* background: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,94,247,1) 17.8%, rgba(2,245,255,1) 100.2% ); */
+  transition: 0.5s;
+}
 /* aayush button ends*/
 
 
@@ -340,8 +346,9 @@ a {
 
 
 .hero-section-right {
-
   position: relative;
+  /* margin-right: 5rem; */
+  padding-right: 5rem;
 }
 
 .myCard {
@@ -516,17 +523,16 @@ a {
 }
 
 .projectCard {
-  width: 80%;
-  height: 550px;
+  width: 75%;
+  height: 500px;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
   box-shadow: 0px 0px 40px #1f1f1f;
   background-color: rgba(255, 255, 255, 0);
-  border-radius: 28px;
+  border-radius: 20px;
   margin: 2rem auto;
-  
-  z-index: 2;
+  z-index: 1;
   transition: 1s;
 }
 
@@ -545,14 +551,16 @@ a {
   background: linear-gradient(90deg, #000000b0, rgba(0, 0, 0, 0.266), #95969600);
   z-index: 1;
   transition: 0.5s;
-  border-radius: 25px;
+  /* border-radius: 25px; */
 
   transform-origin: left;
-  transform: scaleX(0);
+  /* transform: scaleX(0); */
+  transform: translate(-83%,0%);
 }
 
 .projectCard:hover::before {
-  transform: scaleX(1);
+  /* transform: scaleX(1); */
+  transform: translate(0%,0%);
 }
 
 
@@ -580,7 +588,6 @@ a {
 
 .projectCard:hover .projectNumber {
   display: block;
-  
 }
 
 .projectCard::after {
@@ -801,6 +808,15 @@ a {
 
 
 
+
+
+
+
+
+
+
+
+
 /* form Section Start */
 
 .contactMe{
@@ -814,19 +830,19 @@ a {
   -webkit-text-fill-color: transparent;
   width: 100%;
   gap: 1rem;
-  /* font-weight: 700; */
   font-size: 50px;
   /* text-align: center; */
   display: flex;
   align-items: center;
   justify-content: center
-  
+}
+.upper p{
+  font-weight: 300;
 }
 
 .lower{
   /* background-color: rgb(31, 31, 31); */
-  backdrop-filter: ;
-  background-image: url(./1_FX5UnxBezp5yFfZgyPyJgw.png);
+  background-image: url(./stack/connect.png);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -835,7 +851,7 @@ a {
 .lower-inner{
   display: flex;
   /* background-color: rgba(255, 0, 0, 0.14); */
-  background: linear-gradient(rgb(0, 0, 0),rgba(8, 8, 8, 0),rgba(8, 8, 8, 0),rgba(8, 8, 8, 0),rgba(8, 8, 8, 0),rgba(8, 8, 8, 0),rgba(8, 8, 8, 0),rgba(8, 8, 8, 0),rgba(8, 8, 8, 0),black);
+  background: linear-gradient(rgb(0, 0, 0),rgba(8, 8, 8, 0.433),rgba(8, 8, 8, 0.433),rgba(8, 8, 8, 0.433),rgba(8, 8, 8, 0.433),rgba(8, 8, 8, 0.433),rgba(8, 8, 8, 0.433),rgba(8, 8, 8, 0.433),black);
   justify-content: space-evenly;
   align-items: center;
   height: 100%;
@@ -847,33 +863,42 @@ a {
   justify-content: center;
   align-items: center;
 }
+
 .right > form{ 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   /* background-color: red; */
-  backdrop-filter: blur(14px);
+  backdrop-filter: blur(12px);
   border-radius: 13px;
+  padding: 5px;
+  border: dotted 3px rgb(142, 140, 140);
+  /* border-image: linear-gradient(145deg, transparent 35%,#e81cff, #40c9ffb6) 30; */
+  /* border-width: 2px;
+  border-color: #e81cff7f;
+  border-style: dotted; */
 }
-
 input, textarea{
-  /* background-color: #2e2e2e; */
-  backdrop-filter: blur(10px);
-  background-color: rgba(7, 0, 15, 0.389);
-  border: solid 3px rgb(90, 90, 90);
+  background-color: rgba(7, 0, 15, 0.136);
+  border: solid 1px rgb(165, 165, 165);
   padding: 5px 9px;
   width: 500px;
   min-height: 40px;
   margin: 10px;
-  border-radius: 5px;
+  border-radius: 8px;
+}
+.contactMe .lower .right input:focus, textarea:focus {
+  outline: none;
+  border-color:  rgb(200, 80, 192);
 }
 .sendBtn{
   box-shadow: none;
   font-size: 1rem;
   font-weight: 400;
-  scale: 0.8;
-  background-color: rgba(33, 33, 33, 0.678)
+  scale: 0.7;
+  background-color: rgba(33, 33, 33, 0.678);
+  border: solid 2px rgb(165, 165, 165);
 }
 .sendBtn:hover{
  box-shadow: none;
