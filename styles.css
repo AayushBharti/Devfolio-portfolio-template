@@ -494,7 +494,9 @@ a {
 
 
 
-/* Projects Section  */
+/*=============================== Projects Section =============================== */
+
+
 .projectSection {
   /* margin-top: 5rem; */
   /* background-color: #000000; */
@@ -863,6 +865,7 @@ a {
 
 .upper {
   padding-top: 3.5rem;
+  padding-bottom: 3rem;
   background: linear-gradient(43deg, rgb(65, 88, 208) 30%, rgb(200, 80, 192) 40%, rgb(255, 204, 112) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -898,11 +901,15 @@ a {
   width: 100%;
 }
 
-.left {
+.left_img{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 40%;
+}
+.left_img>img{
+  width: 80%;
 }
 
 .right>form {
