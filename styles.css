@@ -17,12 +17,12 @@
   user-select: none;
   /* user-drag: none; */
   -webkit-user-drag: none;
+
 }
 
 :root {
   --bgOrange: #e84949;
 }
-
 
 .wrapper {
   width: 100%;
@@ -38,8 +38,19 @@
 
 
 
+/* ===============================custom scrollbar ===================================*/
+::-webkit-scrollbar{
+  width : 11px;
+}
+::-webkit-scrollbar-track{
+  background: #191919bf;
+}
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(#642bffe3,#ff22e597) ;
+  border-radius: 10px;
+}
 
-
+/* ------------------custom scrollbar -------------------------*/
 
 
 
@@ -78,7 +89,7 @@
 
 .navbar {
   display: flex;
-  width: 100%;
+  width: 99.3vw;
   justify-content: space-between;
   align-items: center;
   /* padding-top: 1rem; */
@@ -119,8 +130,8 @@
   justify-content: space-between;
   /* gap: 2rem; */
   /* position: relative; */
-  background-color: rgba(0, 0, 0, 0.198);
-  border: 1px solid rgb(34, 1, 51);
+  background-color: rgba(44, 0, 83, 0);
+  border: 2px solid rgba(34, 1, 51, 0.383);
   backdrop-filter: blur(11px);
   height: 35px;
   width: 550px;
@@ -153,7 +164,7 @@ a {
 .nav-links {
   display: flex;
   justify-content: center;
-  margin-right: 2rem;
+  margin-right: 1rem;
   gap: 1.5rem;
   /* width: 300px; */
   /* position: relative; */
@@ -202,7 +213,8 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 12rem;
+  height: 100vh;
+  /* padding-top: 12rem; */
   /* gap: 5rem; */
   /* margin: 4rem auto; */
   /* padding: 0 1rem; */
@@ -214,7 +226,7 @@ a {
   font-size: 6em;
   color: rgb(30, 30, 30);
   /* color:gb(18, 18, 18); */
-  bottom: -40%;
+  bottom: -3.3%;
   left: 0%;
   font-weight: bold;
   /* transition: all 3s; */
@@ -495,10 +507,11 @@ a {
 .projectTitle {
   padding-top: 6rem;
   /* color: rgb(149, 3, 216); */
-  background: linear-gradient(43deg, rgb(65, 88, 208) 3%, rgb(200, 80, 192) 30%, rgb(255, 204, 112) 100%);
+  background:  linear-gradient( 193deg, rgb(65, 88, 208) 0%, rgb(168, 12, 158) 46%, rgb(255, 204, 112) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
+  /* -webkit-text-stroke: 0.4px rgb(188, 12, 223); */
   font-weight: 700;
   font-size: 70px;
   /* line-height: 75px; */
@@ -535,12 +548,11 @@ a {
 }
 
 .projectCard {
-  width: 75%;
+  width: 65%;
   height: 500px;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  box-shadow: 0px 0px 40px #1f1f1f;
   background-color: rgba(255, 255, 255, 0);
   border-radius: 20px;
   margin: 2rem auto;
@@ -549,7 +561,7 @@ a {
 }
 
 .projectCard:hover {
-  box-shadow: 0px 0px 1000px rgb(102, 5, 54);
+  box-shadow: 0px 0px 1000px rgba(102, 5, 53, 0.718);
 }
 
 .projectCard::before {
@@ -566,13 +578,13 @@ a {
   border-radius: 20px;
 
   transform-origin: left;
-  /* transform: scaleX(0); */
-  transform: translate(-83%, 0%);
+  transform: scaleX(0);
+  /* transform: translate(-83%, 0%); */
 }
 
 .projectCard:hover::before {
-  /* transform: scaleX(1); */
-  transform: translate(0%, 0%);
+  transform: scaleX(1);
+  /* transform: translate(0%, 0%); */
 }
 
 
@@ -589,13 +601,13 @@ a {
 }
 
 .rightNumber {
-  top: -45px;
-  right: -45px;
+  top: -60px;
+  right: -65px;
 }
 
 .leftNumber {
-  top: -45px;
-  left: -45px;
+  top: -60px;
+  left: -65px;
 }
 
 .projectCard:hover .projectNumber {
@@ -610,6 +622,7 @@ a {
   bottom: 0;
   left: 0;
   background-color: #1f1f1f9a;
+  border-radius: 20px;
   z-index: 0;
 }
 
@@ -709,13 +722,14 @@ a {
 
 
 
-/* Skill Section Start  */
+/*============================= Skill Section Start  =================================*/
 
 
 
 .skillContainer {
   position: relative;
-  /* width: 100%; */
+  width: 100%;
+  height: 100%;
   display: flex;
   padding: 7rem;
   /* margin: 10rem auto; */
@@ -775,11 +789,11 @@ a {
   }
 } */
 .rightSkillContainer {
-  margin-right: 80px;
-  margin-top: 45px;
+  margin-right: 75px;
+  margin-top: 40px;
   height: 480px;
   display: flex;
-  gap: 1.5rem;
+  gap: 2.5rem;
   flex-wrap: wrap;
   width: 45%;
   position: relative;
@@ -795,7 +809,7 @@ a {
 }
 
 .skillsLogo:hover {
-  transform: scale(0.9);
+  transform: scale(0.85);
 }
 
 .space2 video {
@@ -812,17 +826,17 @@ a {
   top: 50%;
   left: 50%;
   filter: opacity(85%);
-  transform: translate(-50%,0%);
+  transform: translate(-50%,-15%);
   z-index: -1;
 
 }
 
 .skillFadedText {
   font-size: 8rem;
-  right: 1%;
-  bottom: 5%;
+  right: 0%;
+  bottom: -4.3%;
   user-select: none;
-  color: #c2c2c235;
+  color: #c2c2c225;
   font-weight: bold;
 }
 
