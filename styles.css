@@ -561,7 +561,7 @@ a {
 }
 
 .projectCard:hover {
-  box-shadow: 0px 0px 1000px rgba(102, 5, 53, 0.718);
+  box-shadow: 0px 0px 1000px rgba(102, 5, 53, 0.765);
 }
 
 .projectCard::before {
@@ -575,7 +575,7 @@ a {
   background: linear-gradient(90deg, #000000b0, rgba(0, 0, 0, 0.266), #95969600);
   z-index: 1;
   transition: 0.5s;
-  border-radius: 20px;
+  border-radius: 18px;
 
   transform-origin: left;
   transform: scaleX(0);
@@ -853,11 +853,12 @@ a {
 
 
 
-/* form Section Start */
+/* ==============================form Section Start ================================================*/
 
 .contactMe {
   display: flex;
   flex-direction: column;
+  margin-top: 4rem;
 }
 
 .upper {
@@ -871,7 +872,7 @@ a {
   /* text-align: center; */
   display: flex;
   align-items: center;
-  justify-content: center
+  justify-content: center;
 }
 
 .upper p {
