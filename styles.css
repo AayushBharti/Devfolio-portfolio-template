@@ -219,6 +219,17 @@ a {
   /* margin: 4rem auto; */
   /* padding: 0 1rem; */
   /* padding-bottom: 4rem; */
+
+}
+.bgImg{
+  position: absolute;
+  background-image: url("./userAsset/wepik-export-20231231193834hE6H.png");
+  background-position: center;
+  background-size: cover;
+  filter: opacity(30%);
+  height: 100%;
+  width: 100%;
+  z-index:1;
 }
 
 .faded-text {
@@ -515,10 +526,13 @@ a {
 
   /* -webkit-text-stroke: 0.4px rgb(188, 12, 223); */
   font-weight: 700;
-  font-size: 70px;
+  font-size: 80px;
   /* line-height: 75px; */
   /* padding: 50px 0 30px; */
   text-align: center;
+  color: rgb(235, 196, 247);
+  /* text-shadow: 0 0 10px #a101a1, 0 0 20px #a002a0, 0 0 40px #a802a8; */
+  letter-spacing: 1px;
 }
 
 .projectContainer {
@@ -866,9 +880,11 @@ a {
 .upper {
   padding-top: 3.5rem;
   padding-bottom: 3rem;
-  background: linear-gradient(43deg, rgb(65, 88, 208) 30%, rgb(200, 80, 192) 40%, rgb(255, 204, 112) 100%);
+  /* background: linear-gradient(43deg, rgb(65, 88, 208) 30%, rgb(200, 80, 192) 40%, rgb(255, 204, 112) 100%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
+  color: rgb(235, 196, 247);
+  text-shadow: 0 0 10px #a101a1, 0 0 20px #a002a0, 0 0 40px #a802a8;
   width: 100%;
   gap: 1rem;
   font-size: 50px;
@@ -910,6 +926,7 @@ a {
 }
 .left_img>img{
   width: 80%;
+  filter: drop-shadow(10px 10px 100px #6f02a6);
 }
 
 .right>form {
