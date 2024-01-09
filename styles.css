@@ -42,19 +42,12 @@
   margin: 0 auto;
 }
 
-#myBtn{
-  /* display: none; Hidden by default */
-  position: fixed; /* Fixed/sticky position */
-  bottom: 20px; /* Place the button at the bottom of the page */
-  right: 30px; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
 
-  color: white; 
-  cursor: pointer; 
-  padding: 15px; 
-  border-radius: 20px; 
-  font-size: 18px;
-}
+
+
+
+
+
 
 
 /* ===============================custom scrollbar ===================================*/
@@ -78,15 +71,16 @@
 
 
 
-
-
 .navbar {
   display: flex;
-  width: 99.3vw;
+  width: 100vw;
+  max-width: 1400px;
+  left: 50%; /* to center horizontally */
+  transform: translate(-50%, 0%);  /* to center horizontally */
   justify-content: space-between;
   align-items: center;
   /* padding-top: 1rem; */
-  height: 55px;
+  height: 50px;
   background-color: rgba(0, 0, 0, 0.134);
   /* background-color: rgb(0, 0, 0); */
   backdrop-filter: blur(10px);
@@ -101,16 +95,20 @@
   transition: 0.5s;
 }
 
+
 .logo {
   width: 28px;
-  margin: 0 1rem;
-  border-radius: 300px;
+  margin: 0 0.7rem;
+  border-radius: 100px;
+  filter: drop-shadow(0px 0px 12px #e8ab03);
+
 }
 
 .logo-text {
   /* margin-left: -1.2rem; */
   /* font-size: 28px; */
   color: rgba(243, 244, 238, 0.707);
+  
 }
 
 .logo-text:hover{
@@ -123,7 +121,7 @@
   justify-content: space-between;
   /* gap: 2rem; */
   /* position: relative; */
-  background-color: rgba(44, 0, 83, 0);
+  background-color: rgba(0, 0, 0, 0.178);
   border: 2px solid rgba(34, 1, 51, 0.383);
   backdrop-filter: blur(11px);
   height: 35px;
@@ -157,7 +155,7 @@ a {
 .nav-links {
   display: flex;
   justify-content: center;
-  margin-right: 1rem;
+  margin-right: 0.5rem;
   gap: 1.5rem;
   /* width: 300px; */
   /* position: relative; */
@@ -180,14 +178,14 @@ a {
 .nav-icon:hover {
   color: rgb(255, 255, 255);
   transform: scale(0.9);
-
+  filter: drop-shadow(0px 0px 7px #ffffff);
 }
 
 .nav-icon:active {
-  transform: scale(0.7);
+  transform: scale(0.8);
 }
 
-/* Header End */
+/*===============================Header End =================================*/
 
 
 
@@ -229,7 +227,7 @@ a {
   top: 50%;
   left: 50%;
   filter: opacity(90%);
-  transform: translate(-50%, -94.6%) rotate(180deg);
+  transform: translate(-50%, -95.6%) rotate(180deg);
   z-index: 0;
 }
 
@@ -729,6 +727,7 @@ a {
 
 .icon:hover {
   scale: 0.9;
+  filter: drop-shadow(0px 0px 7px #ffffff);
 }
 
 /* Project Section End  */
