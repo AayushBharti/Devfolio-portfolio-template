@@ -67,8 +67,9 @@
 
 .navbar {
   display: flex;
-  width: 100vw;
+  width: 100%;
   max-width: 1500px;
+  /* max-width: 1300px; */
   left: 50%; /* to center horizontally */
   transform: translate(-50%, 0%);  /* to center horizontally */
   justify-content: space-between;
@@ -226,7 +227,7 @@ a {
   /* top: -22%; */
   top: 50%;
   left: 50%;
-  filter: opacity(90%);
+  filter: opacity(100%);
   transform: translate(-50%, -95.6%) rotate(180deg);
   z-index: 0;
 }
@@ -288,7 +289,7 @@ a {
 
 
 
-/* ----------aayush button starts*/
+/* ----------------------aayush button starts-------------------*/
 
 .btn {
   background-color: #110101;
@@ -305,27 +306,25 @@ a {
   min-width: 180px;
   max-width: 250px;
   padding: 1rem 2.5rem;
-  border-radius: 8px;
+  border-radius: 30px;
   font-family: gillroy, Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 700;
-  box-shadow: 0px 0px 60px 10px rgba(236, 17, 17, 0.368);
+  box-shadow: 0px 0px 140px 80px rgba(236, 17, 17, 0.256);
   position: relative;
   cursor: pointer;
   z-index: 1;
   letter-spacing: 1px;
   margin-top: 1.5rem;
-
 }
 
 .btn:hover {
-  /* box-shadow: 0px 0px 75px 15px rgba(210, 17, 236, 0.507); */
   /* transition: 0.4s 0.5s; */
   transition: 0.5s;
   scale: 1.0;
   letter-spacing: 2px;
   background-color: rgba(0, 0, 0, 0.574);
-  border-color: rgb(241, 193, 247);
-  color: #ffffffef;
+  /* border-color: rgb(241, 193, 247);
+  color: #ffffffef; */
 }
 
 .btn::before {
@@ -345,6 +344,8 @@ a {
   /* border-radius: 80px; */
   z-index: -1;
   background-image: linear-gradient(135deg, #7b4397, #dc2430);
+  
+  /* border-radius: inherit; */
 }
 
 .btn:hover::before {
@@ -355,7 +356,10 @@ a {
 .btn:active {
   transform: scale(0.9) rotate(3deg);
   /* background: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,94,247,1) 17.8%, rgba(2,245,255,1) 100.2% ); */
-  transition: 0.2s;
+  transition: 0.3s;
+  letter-spacing: 1px;
+  box-shadow: 0px 0px 0px 0px rgba(236, 17, 17, 0.256);
+
 }
 
 /* aayush button ends*/
@@ -854,7 +858,7 @@ a {
   width: 200%;
   top: 50%;
   left: 50%;
-  filter: opacity(85%);
+  filter: opacity(95%);
   transform: translate(-50%,-15%);
   z-index: -1;
 }
