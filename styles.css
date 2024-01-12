@@ -538,7 +538,7 @@ a {
 }
 
 #project1 {
-  background-image: url(/projects/Frame\ 1\ \(1\).png);
+  background-image: url(./projects/razorpay.jpg);
   right: 5%;
   margin-top: 5rem;
 }
@@ -934,6 +934,7 @@ a {
   align-items: center;
   width: 40%;
 }
+
 .left_img>img{
   width: 80%;
   filter: drop-shadow(10px 10px 60px #2802a6);
@@ -944,17 +945,20 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* background-color: red; */
-  backdrop-filter: blur(12px);
+  background-color: rgba(255,255,255,0.13);
+  backdrop-filter: blur(11px);
+  border: 2px solid rgba(255,255,255,0.1);
+  box-shadow: 0 0 60px rgba(8, 7, 16, 0.662);
   border-radius: 13px;
   padding: 5px;
-  border: dotted 3px rgb(238, 181, 245);
+  /* border: dotted 3px rgb(238, 181, 245); */
   /* border-image: linear-gradient(145deg, transparent 35%,#e81cff, #40c9ffb6) 30; */
 }
 
 input,
-textarea {
-  background-color: rgba(7, 0, 15, 0.136);
+textarea{
+  /* background-color: rgba(7, 0, 15, 0.136); */
+  background-color: rgba(255,255,255,0.07);
   border: solid 1px rgb(165, 165, 165);
   padding: 5px 9px;
   width: 500px;
@@ -963,10 +967,13 @@ textarea {
   border-radius: 8px;
 }
 
-.contactMe .lower .right input:focus,
-textarea:focus {
+/* .contactMe > .lower > .right > input:focus, textarea:focus{
   outline: none;
   border-color: rgb(238, 181, 245);
+} */
+
+::placeholder{
+  color: #e5e5e5d6;
 }
 
 .send-btn {
