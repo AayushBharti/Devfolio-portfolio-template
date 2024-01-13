@@ -974,7 +974,7 @@ a {
   width: 200%;
   top: 50%;
   left: 50%;
-  filter: opacity(70%);
+  filter: opacity(80%);
   transform: translate(-50%,-15%);
   z-index: -1;
 }
@@ -1244,6 +1244,8 @@ textarea{
   height: 50px;
   align-items: center;
   justify-content: center;
+  max-width: 1500px;
+  margin: 0 auto;
 }
 
 .copyright p {
