@@ -81,7 +81,10 @@
   backdrop-filter: blur(10px);
   z-index: 10;
   position: fixed;
+
+
 }
+
 
 .logo-container {
   display: flex;
@@ -96,14 +99,12 @@
   margin: 0 0.7rem;
   border-radius: 100px;
   filter: drop-shadow(0px 0px 12px #e8ab03);
-
 }
 
 .logo-text {
   /* margin-left: -1.2rem; */
   /* font-size: 28px; */
   color: rgba(243, 244, 238, 0.707);
-  
 }
 
 .logo-text:hover{
@@ -180,6 +181,15 @@ a {
   transform: scale(0.8);
 }
 
+
+@media (max-width:641px){
+  .nav-items{
+    display:none;
+  }
+  .navbar{
+    padding: 1rem 0.5rem;
+  }
+}
 /*===============================Header End =================================*/
 
 
@@ -195,6 +205,7 @@ a {
 /*================================== Hero Section Start==========================================  */
 
 .hero{
+  /* top: 0%; */
   position: relative;
   padding: 12rem 3rem;
 }
@@ -207,6 +218,7 @@ a {
   height: 100%;
   width: 100%;
   position: relative;
+  flex-direction: row;
   /* padding-top: 12rem; */
   /* gap: 5rem; */
   /* margin: 4rem auto; */
@@ -482,7 +494,51 @@ a {
 }
 
 
+@media (max-width:641px){
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+  }
 
+  .space video{
+  transform: translate(-50%, -247%) rotate(180deg) scale(1.4);
+  }
+
+  .hero-section-heading {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .role, .hero-section-sub-heading{
+    font-size: 20px;
+  }
+  .hero-section-left {
+    align-items: center;
+    justify-content: center;
+    top: -10%;
+    gap: 1rem;
+  }
+  .hero-section-description {
+    font-size: 13px;
+    width: 95%;
+    text-align:center;
+  }
+  .btn {
+    font-size: 12px;
+    margin-bottom: 2.5rem;
+    padding: 0.9rem 2rem;
+
+  }
+  .faded-text {
+  font-size: 3.5rem;
+  bottom: -1.3%;
+  left: 0%;
+  }
+  .myCard {
+    height: 22rem;
+    width: 15rem;
+  }
+}
 
 
 
@@ -736,7 +792,57 @@ a {
   filter: drop-shadow(0px 0px 7px #ffffff);
 }
 
-/* Project Section End  */
+@media (max-width:641px){
+  .projectTitle {
+  font-size: 50px;
+  }
+  .projectContainer {
+    gap: 3rem;
+  }
+
+  #project1, #project2, #project3, #project4{
+    left: 0%;
+    right: 0%;
+  }
+  .projectCard {
+    margin: 2rem auto;
+    height: 200px;
+    margin: 0 auto;  
+  }
+  .projectCard:hover .projectNumber {
+    display: none;
+  }
+  .projectContent {
+    gap: 0rem;
+    padding: 0.5em;
+    bottom: 1%;
+  }
+  .leftProjectContent, .rightProjectContent {
+    left: 2%;
+  }
+  .projectBtn{
+    display: none;
+  }
+  .projectSkillsContainer {
+  gap: 0.35em;
+  }
+  .projectSkill {
+    width: 17px;
+  }
+  .projectHeading {
+  font-size: 16px;
+
+  }
+  .projectSubHeading {
+    font-size: 9px;
+  }
+  .icon {
+    font-size: 15px;
+    margin-top: 0.7em;
+  }
+}
+
+/*====================== Project Section End ============================= */
 
 
 
@@ -765,7 +871,7 @@ a {
 .skillFadedText {
   font-size: 9rem;
   right: -5%;
-  bottom: -10%;
+  bottom: -10%; 
   user-select: none;
   color: #c2c2c225;
   font-weight: bold;
@@ -863,7 +969,52 @@ a {
   z-index: -1;
 }
 
-/* Skill Section End  */
+@media (max-width:641px){
+  .skillContainer {
+    padding: 6rem 3rem 2rem 2rem ;
+    margin: 1rem auto;
+    margin-bottom: 10rem;
+    gap: 10px;
+    flex-direction: column;
+  }
+  .leftSkillContainer {
+    width: 100%;
+  }
+  .skillHeading {
+  font-size: 35px;
+  line-height: 50px;
+  }
+  .skillHeading span {
+    font-size: 60px;
+  }
+  .skillSubHeading {
+    width: 100%;
+  }
+  .skillSubHeading p {
+    font-size: 14px;
+  }
+  .rightSkillContainer {
+    margin-right: 0px;
+    margin-top: 40px;
+    padding: 1.3rem;
+    gap: 1.3rem;
+    width: 100%;
+    height: auto;
+  }
+  .skillsLogo {
+    width: 40px;
+  }
+  .space2 video {
+    transform: translate(-50%,-15%) scale(1.3);
+  }
+  .skillFadedText {
+    font-size: 8rem;
+    right: 10%;
+    bottom: -14%; 
+  }
+}
+
+/* =============================Skill Section End======================= */
 
 
 
@@ -1019,7 +1170,23 @@ textarea{
   transform: scale(0.95);
 }
 
-
+@media (max-width:641px){
+  .upper {
+    font-size: 40px;
+  }
+  .left_img{
+    display: none;
+  }
+  .right>form {
+    width: ;
+  }
+  input,
+  textarea{
+  width: 100%;
+  /* min-height: 40px; */
+  margin: 8px;
+  }
+}
 
 
 
