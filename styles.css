@@ -576,8 +576,6 @@ a {
   /* background-color: #000000; */
   /* background-color:  rgb(30, 30, 30); */
   background: linear-gradient(rgb(30, 30, 30), rgb(8, 8, 8), rgb(5, 5, 5), black, black, black, black);
-
-
 }
 
 .projectTitle {
@@ -976,7 +974,7 @@ a {
   width: 200%;
   top: 50%;
   left: 50%;
-  filter: opacity(95%);
+  filter: opacity(70%);
   transform: translate(-50%,-15%);
   z-index: -1;
 }
