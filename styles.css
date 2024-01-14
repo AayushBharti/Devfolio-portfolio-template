@@ -49,7 +49,7 @@
   width : 11px;
 }
 ::-webkit-scrollbar-track{
-  background: #191919bf;
+  background: #19191911;
 }
 ::-webkit-scrollbar-thumb{
   background: linear-gradient(#642bffe3,#ff22e597) ;
@@ -539,9 +539,12 @@ a {
 
   }
   .faded-text {
-  font-size: 3.5rem;
-  bottom: -1.3%;
-  left: 0%;
+    /* position: relative; */
+    font-size: 3.5rem;
+    width: 100%;
+    text-align: center;
+    bottom: -1.6%;
+    left: 0%;
   }
   .myCard {
     height: 22rem;
@@ -575,7 +578,7 @@ a {
   /* margin-top: 5rem; */
   /* background-color: #000000; */
   /* background-color:  rgb(30, 30, 30); */
-  background: linear-gradient(rgb(30, 30, 30), rgb(8, 8, 8), rgb(5, 5, 5), black, black, black, black);
+  background: linear-gradient(rgb(30, 30, 30) 10%, rgb(15, 15, 15), rgb(5, 5, 5), black, black, black, black);
 }
 
 .projectTitle {
@@ -601,7 +604,6 @@ a {
   display: flex;
   flex-direction: column;
   gap: 120px;
-  /* width: 100%; */
 }
 
 #project1 {
@@ -801,51 +803,77 @@ a {
 
 @media (max-width:900px){
   .projectTitle {
-  font-size: 50px;
+    font-size: 50px;
+    filter: drop-shadow(0px 0px 7px #780159);
+
   }
   .projectContainer {
-    gap: 3rem;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 0 0;
+    gap: 2rem;
   }
-
   #project1, #project2, #project3, #project4{
     left: 0%;
     right: 0%;
   }
   .projectCard {
     margin: 2rem auto;
-    height: 200px;
+    height: 250px;
     margin: 0 auto;  
+    box-shadow: 0px 0px 100px rgba(61, 0, 66, 0.682);
   }
-  .projectCard:hover .projectNumber {
+  /* .projectCard:hover .projectNumber {
     display: none;
+  } */
+  .projectCard::before {
+    transform: scaleX(1);
+  }
+  .projectCard::after {
+    background-color: #1f1f1f7c;
   }
   .projectContent {
     gap: 0rem;
     padding: 0.5em;
     bottom: 1%;
+
+    transform: scale(1.05);
+
+  }
+  .projectNumber {
+    font-size: 50px;
+    display: block;
+    filter: drop-shadow(0px 0px 19px #ffffff);
+
+  }
+  .rightNumber, .leftNumber {
+    top: -20px;
+    left: 85%;
   }
   .leftProjectContent, .rightProjectContent {
-    left: 2%;
+    left: 4%;
   }
   .projectBtn{
     display: none;
   }
   .projectSkillsContainer {
-  gap: 0.35em;
+    gap: 0.35em; 
   }
   .projectSkill {
     width: 17px;
   }
   .projectHeading {
   font-size: 16px;
-
   }
   .projectSubHeading {
     font-size: 9px;
   }
   .icon {
-    font-size: 15px;
+    font-size: 16px;
     margin-top: 0.7em;
+
+    filter: drop-shadow(0px 0px 8px #ffffff);
+
   }
 }
 
@@ -1011,21 +1039,27 @@ a {
   .rightSkillContainer {
     margin-right: 0px;
     margin-top: 40px;
-    padding: 28px;
-    gap: 20px;
+    padding: 20px;
+    gap: 30px;
     width: 100%;
+    max-width: 500px;
     height: auto;
+    /* overflow: hidden; */
   }
   .skillsLogo {
     width: 40px;
   }
   .space2 video {
-    transform: translate(-50%,-15%);
+    transform: translate(-50%,-15%) scale(1.3);
+    max-width: 800px;
   }
   .skillFadedText {
+    /* position: relative; */
     font-size: 8rem;
-    right: 10%;
-    bottom: -14%; 
+    width: 100%;
+    text-align: center;
+    left: 1%;
+    bottom: -155px; 
   }
 }
 
