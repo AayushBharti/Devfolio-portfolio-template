@@ -506,7 +506,7 @@ a {
   }
 
   .space video{
-  transform: translate(-50%, -170%) scale(1.1);
+    transform: translate(-50%, -160%) scale(1.1);
   }
 
   .hero-section-heading {
@@ -613,7 +613,7 @@ a {
 }
 
 #project2 {
-  background-image: url(/projects/Project2.png);
+  background-image: url(/projects/discord.jpg);
   left: 5%;
 }
 
@@ -711,12 +711,14 @@ a {
   flex-direction: column;
   background-color: rgba(255, 255, 255, 0);
   gap: 1rem;
-  color: white;
+  color: rgb(255, 255, 255);
   padding: 2em;
   bottom: 20%;
   position: absolute;
   z-index: 5;
   transition: 0.4s;
+  max-width: 50%;
+  bottom: 7%;
 }
 
 .leftProjectContent {
@@ -835,7 +837,7 @@ a {
   .projectContent {
     gap: 0rem;
     padding: 0.5em;
-    bottom: 1%;
+    bottom: 2%;
 
     transform: scale(1.05);
 
