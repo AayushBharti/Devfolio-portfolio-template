@@ -155,7 +155,7 @@ a {
 .nav-links {
   display: flex;
   justify-content: center;
-  margin-right: 0.5rem;
+  margin-right: 1rem;
   gap: 1.5rem;
   /* width: 300px; */
   /* position: relative; */
@@ -185,6 +185,9 @@ a {
   transform: scale(0.8);
 }
 
+.hamburger-icon{
+  display: none;
+}
 
 @media (max-width:900px){
   .nav-items{
@@ -192,6 +195,9 @@ a {
   }
   .navbar{
     padding: 1rem 0.5rem;
+  }
+  .hamburger-icon{
+    display: block;
   }
 }
 /*===============================Header End =================================*/
@@ -404,6 +410,7 @@ a {
   height: 23rem;
   width: 16rem;
   perspective: 1000px;
+  animation: float 6s ease-in-out infinite;
 }
 
 .title {
@@ -452,6 +459,8 @@ a {
 
   background-image: url("/userAsset/aayush_flower.jpg");
   background-size: cover;
+  background-position: center;
+
   /* background: linear-gradient(43deg, rgb(65, 88, 208) 0%, rgb(200, 80, 192) 46%, rgb(255, 204, 112) 100%); */
 }
 
@@ -459,7 +468,7 @@ a {
 .backSide::before {
   /* background-image: linear-gradient(43deg, rgb(65, 88, 208) 0%, rgb(200, 80, 192) 46%, rgb(255, 204, 112) 100%); */
   /* background-color: #ffd700; */
-  background: linear-gradient(143deg, #8a2387, #e94057, #f27121);
+  background: linear-gradient(143.42deg,#4AB1F1 0.58%,#566CEC 37.22%,#D749AF 73.87%,#FF7C51 112.26%);
   /* background: linear-gradient(140deg, #03001e, #7303c0, #ec38bc,white); */
 }
 
@@ -474,15 +483,26 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
   content: '';
-  width: 115%;
-  height: 115%;
+  width: 110%;
+  height: 110%;
   position: absolute;
   z-index: -1;
   border-radius: 1em;
   filter: blur(30px);
-  animation: animate 3s linear infinite;
+  animation: animate 6s ease-in-out infinite;
 }
 
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
 
 @keyframes animate {
   0% {
@@ -725,7 +745,7 @@ a {
   position: absolute;
   z-index: 5;
   transition: 0.4s;
-  max-width: 50%;
+  max-width: 80%;
   bottom: 7%;
 }
 
