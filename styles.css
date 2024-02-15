@@ -157,15 +157,6 @@ a {
   justify-content: center;
   margin-right: 1rem;
   gap: 1.5rem;
-  /* width: 300px; */
-  /* position: relative; */
-  /* background-color: rgba(217, 0, 0, 0.387); */
-  /* height: 35px;*/
-  /* width: 550px;  */
-  /* padding: 5px; */
-  /* align-items: end; */
-  /* border-radius: 16px;
-  padding: 0 3.4rem; */
 }
 
 .nav-icon {
@@ -644,7 +635,7 @@ a {
 }
 
 #project3 {
-  background-image: url(/projects/Project3.png);
+  background-image: url(/projects/Password\ generator.jpg);
   right: 5%;
 }
 
@@ -797,33 +788,38 @@ a {
 
 .btnGroup{
   display: flex;
+
   justify-content: start;
   align-items: center;
   gap: 1rem;
 }
 
 .projectBtn {
-  box-shadow: none;
-  font-size: 0.7rem;
+  border-radius: 40px;
+  font-size: 0.85rem;
   font-weight: 600;
-  height: 42px;
+  height: 35px;
   padding: 0px 0px ;
-  min-width: none;
-  background-color: rgba(33, 33, 33, 0.678);
+  letter-spacing: 1px;
+  border: none;
+  background-position: left;
+  background-size: 300%;
+  background-image: linear-gradient(135deg, #9419d2, #dc2430, #dc2449, #9a31cf);
   min-width: 125px;
+  transition: 0.3s;
 }
 
 .projectBtn:hover {
-  box-shadow: none;
-  letter-spacing: 1px;
+  scale: 0.95;
+  background-position: right;
+  filter: drop-shadow(0px 0px 7px #730606);
 }
 
 .icon {
   cursor: pointer;
   color: white;
-  font-size: 30px;
+  font-size: 32px;
   transition: 0.3s;
-  margin-top: 1.5rem;
 }
 
 .icon:hover {
@@ -960,7 +956,7 @@ a {
   line-height: 60px;
 }
 
-.skillHeading span {
+.skillHeading::first-letter {
   font-size: 90px;
 }
 
