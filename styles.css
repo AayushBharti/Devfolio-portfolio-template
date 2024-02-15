@@ -769,6 +769,8 @@ a {
   font-style: italic;
   width: 70%;
   opacity: 70%;
+  border-radius: 6px;
+  backdrop-filter: blur(8px);
 }
 
 .projectCard:hover .projectContent {
@@ -798,15 +800,14 @@ a {
   border-radius: 40px;
   font-size: 0.85rem;
   font-weight: 600;
-  height: 35px;
-  padding: 0px 0px ;
+  padding: 0.65em 1.5em ;
   letter-spacing: 1px;
   border: none;
   background-position: left;
   background-size: 300%;
   background-image: linear-gradient(135deg, #9419d2, #dc2430, #dc2449, #9a31cf);
-  min-width: 125px;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .projectBtn:hover {
@@ -878,8 +879,14 @@ a {
   .leftProjectContent, .rightProjectContent {
     left: 4%;
   }
+  .btnGroup{
+    margin-top: 0.4em;
+  }
   .projectBtn{
-    display: none;
+    height: 20px;
+    min-width: none;
+    font-size: 0.5em;
+
   }
   .projectSkillsContainer {
     gap: 0.35em; 
@@ -895,7 +902,6 @@ a {
   }
   .icon {
     font-size: 16px;
-    margin-top: 0.7em;
 
     filter: drop-shadow(0px 0px 8px #ffffff);
 
