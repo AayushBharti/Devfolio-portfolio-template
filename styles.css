@@ -777,20 +777,8 @@ a {
   transform: scale(1.05);
 }
 
-/* .btnGroup {
-  display: flex;
-  gap: 0.9rem;
-  align-items: center;
-}
-
-.btnGroup .btnProject {
-  border: none;
-  outline: none;
-} */
-
 .btnGroup{
   display: flex;
-
   justify-content: start;
   align-items: center;
   gap: 1rem;
