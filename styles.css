@@ -685,8 +685,6 @@ a {
 }
 
 
-
-
 .projectNumber {
   position: absolute;
   font-size: 180px;
@@ -799,9 +797,9 @@ a {
 }
 
 .projectBtn:hover {
-  scale: 0.95;
+  scale: 0.96;
   background-position: right;
-  filter: drop-shadow(0px 0px 7px #730606);
+  filter: drop-shadow(0px 0px 20px #2101017e);
 }
 
 .icon {
@@ -809,11 +807,36 @@ a {
   color: white;
   font-size: 32px;
   transition: 0.3s;
+  /* font-size: 18px; */
 }
 
-.icon:hover {
-  scale: 0.9;
-  filter: drop-shadow(0px 0px 7px #ffffff);
+.github{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background-color: #11010100;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 0.80rem;
+  font-weight: 600;
+  letter-spacing: 1.8px;
+  transform-origin: left;
+  transition: 0.3s;
+}
+.github:hover{
+  padding: 0.15em 1em ;
+  background-color: #110101;
+  filter: drop-shadow(0px 0px 20px #0000006c);
+}
+
+.github:hover::after{
+  content: "Github";
+  padding-left: 0.6em;
+}
+
+.icon:hover ,.github:hover .icon{
+  /* font-size: 18px; */
+  scale: 0.6;
 }
 
 @media (max-width:900px){
