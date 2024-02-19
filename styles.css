@@ -913,9 +913,22 @@ a {
   }
   .icon {
     font-size: 16px;
-
     filter: drop-shadow(0px 0px 8px #ffffff);
-
+  }
+  .github:hover{
+    padding: 0 0;
+    background-color: #110101;
+    filter: drop-shadow(0px 0px 20px #00000000);
+  }
+  
+  .github:hover::after{
+    content: "";
+    padding-left: 0em;
+  }
+  
+  .icon:hover ,.github:hover .icon{
+    font-size: 16px;
+    scale: none;
   }
 }
 
