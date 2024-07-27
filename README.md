@@ -4,6 +4,10 @@
 
 ---
 
+## LIVE LINK: **[Click here](https://free-portfolio-aayush.vercel.app/)**
+
+![alt text](./Images/live.png)
+
 ## 🚀 Features
 
 - **Modern UI Design + Reveal Animations:** Sleek, stylish, and eye-catching animations to keep your audience engaged.
@@ -14,7 +18,7 @@
 - **Optimized and Fast:** Blazing fast performance ensures a smooth user experience.
 - **Well-organized Documentation:** Comprehensive guide to help you get started and customize with ease.
 
-Check out the demo: **[Click here](https://aayushbharti.vercel.app/)**
+Check out the demo: **[Click here](https://free-portfolio-aayush.vercel.app/)**
 
 ---
 
@@ -25,3 +29,10 @@ Check out the demo: **[Click here](https://aayushbharti.vercel.app/)**
 - **Beyond a Resume:** Demonstrate your capabilities and creativity in a way that a resume can't.
 
 ---
+
+## 📫 Contact
+For any questions or feedback, feel free to reach out:
+
+- **Email**: iAayushBharti@gmail.com
+<!-- - **Twitter**: @yourTwitterHandle -->
+- **LinkedIn**: https://www.linkedin.com/in/iaayushbharti/
