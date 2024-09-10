@@ -4,6 +4,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap');
 
+
+
+
+
+
 * {
   margin: 0;
   padding: 0;
@@ -46,6 +51,20 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ===============================custom scrollbar ===================================*/
 ::-webkit-scrollbar {
   width: 11px;
@@ -61,6 +80,8 @@
 }
 
 /* ------------------custom scrollbar -------------------------------------*/
+
+
 
 
 
@@ -206,6 +227,14 @@ a {
 }
 
 /*===============================Header End =================================*/
+
+
+
+
+
+
+
+
 
 
 
@@ -415,6 +444,30 @@ a {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .hero-section-right {
   position: relative;
   /* margin-right: 5rem; */
@@ -605,6 +658,13 @@ a {
     width: 15rem;
   }
 }
+
+
+
+
+
+
+
 
 
 
@@ -1025,6 +1085,19 @@ a {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*============================= Skill Section Start  =================================*/
 
 
@@ -1237,6 +1310,19 @@ a {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ==============================form Section Start ================================================*/
 
 .contactSection {
@@ -1396,8 +1482,27 @@ textarea {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
 .footer {
-  /* margin-top: 30px; */
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -1428,7 +1533,115 @@ textarea {
   font-size: 2.2rem;
   font-weight: 800;
   letter-spacing: 0.5px;
-  /* background: linear-gradient(43deg, rgb(65, 88, 208) 0%, rgb(200, 80, 192) 46%, rgb(255, 204, 112) 100%); */
+  background: linear-gradient(43deg, rgb(65, 88, 208) 0%, rgb(200, 80, 192) 46%, rgb(255, 204, 112) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.secondLast>p {
+  font-size: 0.9rem;
+  color: rgba(238, 232, 232, 0.673);
+  font-weight: 900;
+}
+
+.last-links {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.last-quote {
+  display: flex;
+  margin-top: 2rem;
+  gap: 1.2rem;
+  height: 20px;
+  margin-top: 5rem;
+}
+
+.last-quote>.left-border {
+  transform: rotateY(180deg);
+}
+
+.last-quote .left-border,
+.right-border {
+  opacity: 20%;
+  margin-top: 4px;
+}
+
+.last-quote>p {
+  color: #ffffff;
+  opacity: 20%;
+  text-align: center;
+  font-size: small;
+  font-weight: 500;
+  text-transform: lowercase;
+}
+
+.copyright {
+  background-color: rgba(16, 16, 16, 0.243);
+  display: flex;
+  height: 36px;
+  align-items: center;
+  justify-content: center;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.copyright p {
+  font-size: 0.7rem;
+  color: gray;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: black;
+}
+
+.ft-grad {
+  background-image: url(./stack/footer-gradient.svg);
+  filter: opacity(90%);
+  filter: contrast(125%);
+  opacity: 70%;
+  background-position: bottom;
+  background-size: cover;
+  padding-top: 120px;
+}
+
+.secondLast {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  z-index: 100;
+}
+
+.secondLast>a>h2 {
+  margin-bottom: 20px;
+  font-size: 2.2rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
   background: linear-gradient(90.42deg, #4AB1F1 0.58%, #566CEC 37.22%, #D749AF 73.87%, #FF7C51 112.26%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1489,8 +1702,6 @@ textarea {
   font-size: 0.7rem;
   color: gray;
 }
-
-
 
 
 
